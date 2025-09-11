@@ -50,9 +50,9 @@ a {
 
 
 nav {
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px); 
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     height: 80px;
@@ -72,9 +72,9 @@ nav.scrolled {
     width: 76%;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.4); 
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     height: 80px;
@@ -251,6 +251,7 @@ nav.scrolled .left p {
 
 .about-card {
     display: flex;
+    flex-direction: row;
     gap: 2em;
     justify-content: center;
     align-items: center;
@@ -704,7 +705,8 @@ nav.scrolled .left p {
 
     @media (max-width: 1080px) {
     .about-card {
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         padding: 20px 30px;
         width: 100%;
     }
@@ -760,5 +762,12 @@ nav.scrolled .left p {
         "permit-licensing-system";
     padding: 0 20px;
 }
+
+    .about-card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        width: 100%;
+    }
 }
 
