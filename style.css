@@ -396,7 +396,7 @@ nav.scrolled .left p {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
@@ -666,6 +666,51 @@ nav.scrolled .left p {
     font-size: 18px;
     color: var(--font-color);
     margin-bottom: 20px;
+}
+
+@media (max-width: 980px) {
+    .about-card {
+        flex-direction: column;
+        padding: 20px 30px;
+        width: 100%;
+    }
+
+    .about-info-left, .about-info-right {
+        width: 100%;
+
+    }
+
+    .what-drives-me-card h4 {
+        text-align: center;
+    }
+
+    .about-info-right {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .about-info-right ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .about-info-right ul li::before {
+        content: "• ";
+        color: #fff;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .left {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
