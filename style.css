@@ -704,7 +704,7 @@ nav.scrolled .left p {
 
     @media (max-width: 1080px) {
     .about-card {
-        flex-direction: column;
+        flex-direction: row;
         padding: 20px 30px;
         width: 100%;
     }
